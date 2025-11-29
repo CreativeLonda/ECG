@@ -4,7 +4,7 @@ import numpy as np
 fs = 500  
 lowcut = 0.5
 highcut = 40.0
-ecg_signal = np.loadtxt(r"C:\Users\hites\OneDrive\Documents\ECG\ECG.dat")
+ecg_signal = np.loadtxt(r"C:\Users\hites\OneDrive\Documents\GitHub\ECG\ECG.dat")
 ecg_signal = ecg_signal - np.mean(ecg_signal)
 
 def bandpass_filter(data, lowcut, highcut, fs, order=4):

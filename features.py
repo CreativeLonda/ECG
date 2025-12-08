@@ -11,7 +11,7 @@ def extract_features(filtered_ecg, rr_intervals, r_peaks, p_peaks, q_peaks, s_pe
     RMSSD = np.sqrt(np.mean(np.diff(rr_intervals)**2)) * 1000 if len(rr_intervals) > 2 else 0
     pNN50 = np.sum(np.abs(np.diff(rr_intervals)) > 0.05) / len(rr_intervals) * 100 if len(rr_intervals) > 1 else 0
 
-    # ---------- QRS WIDTH ----------
+    # ---------- QRS WIDTH ---------
     qrs_widths = []
     ecg_signal = np.array(filtered_ecg)
 

@@ -2,7 +2,7 @@ import numpy as np
 from scipy.signal import find_peaks
 
 def extract_all_peaks(filtered_ecg, fs=500):
-    # -------- R PEAKS ----------
+    # -------- R PEAKS ---------
     diff_ecg = np.diff(filtered_ecg)
     squared = diff_ecg ** 2
     window = int(0.1 * fs)

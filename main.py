@@ -8,7 +8,7 @@ from features import extract_features, summarize_features
 from llm_report import generate_ecg_report_with_ollama
 from pdf_report import create_ecg_report
 
-fs = 500  # ECG sampling rate
+fs = 500  # ECG sampling rate:
 
 def main():
     print("📥 Loading ECG.dat ...")

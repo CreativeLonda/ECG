@@ -38,7 +38,7 @@ def generate_ecg_report_with_ollama(features):
     - Arrhythmia Detected: {features.get('Arrhythmia_detected', 'Unknown')}
     """
 
-    # Run Ollama subprocess
+    # Run Ollama subprocess:
     try:
         result = subprocess.run(
         ["ollama", "run", "llama3.2"],

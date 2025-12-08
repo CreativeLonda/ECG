@@ -92,9 +92,9 @@ def create_ecg_report(features, interpretation_text, plot_path=None, filename="E
         story.append(Paragraph(line, styles["NormalText"]))
         story.append(Spacer(1, 4))
 
-    # -------------------------------
+    # ------------------------------
     # ECG Plot
-    # -------------------------------
+    # ------------------------------
     if plot_path:
         story.append(Paragraph("ECG Waveform", styles["SectionTitle"]))
         story.append(Image(plot_path, width=500, height=200))
